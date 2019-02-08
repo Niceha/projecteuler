@@ -3,3 +3,11 @@
 
 What is the sum of the digits of the number 2^1000?
 '''
+def power_sum(exp):
+    sum = 0
+    pow = 2 ** int(exp)
+    for i in str(pow):
+        sum = sum + int(i)
+    return(sum)
+   
+print(power_sum(1000))
